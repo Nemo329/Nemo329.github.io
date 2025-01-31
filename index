@@ -1,11 +1,200 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <title>我的网页</title>
-</head>
-<body>
-    <h1>我的第一个标题</h1>
-    <p>我的第一个段落。</p>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>张杰JasonZhang</title>
+        <style>
+            ul {
+                list-style-type:none;
+                margin: 0;
+                padding: 10;
+                overflow: hidden;
+                background-color: #4c7de8;
+                font-size: 120%;
+                font-weight: bolder;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #2267e7;
+                text-decoration: none;
+                color: black;
+            }
+            div.bar {
+                text-align: center;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+            div.img {
+                border: 2px solid #1a5fd5;
+                border-radius: 25px;
+            }
+            div.img:hover {
+                border: 1px solid #777;
+            }
+            div.img img {
+                width:100%;
+                height: auto;
+                border-radius: 25px;
+            }
+            div.desc {
+                padding: 15px;
+                text-align: center;
+
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 25%;
+            }
+            @media only screen and (max-width: 700px){
+                .responsive {
+                    width: 50%;
+                    margin: 6px 0;
+                }
+            }
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+            <!--列后面清除浮动-->
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            body {
+                margin-left: 200px;
+                margin-right: 200px;
+                background-color: rgb(223, 231, 237);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 导航栏 -->
+        <div class="bar">
+        <ul>
+            <li><a class="active" href="index.html">首页</a></li>
+            <li><a href="about.html">介绍</a></li>
+            <li><a href="singer.html">歌手</a></li>
+            <li><a href="fashion.html">时尚</a></li>
+            <li><a href="benevolent.html">公益</a></li>
+            <li><a href="variety.html">综艺</a></li>
+        </ul>
+        </div>
+        <!-- 轮播图 -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- 指示符 -->
+            <!-- 建立一个列表设置一个滑动索引 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- 轮播项目 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/top2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/top.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/top3.jpg">
+                </div>
+            </div>
+            <!-- 设置左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <hr>
+        <!-- 响应式图片 -->
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="about.html">
+                    <img src="img/介绍.jpg">
+                </a>
+                <div class="desc">介绍</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="singer.html">
+                    <img src="img/singer.jpg">
+                </a>
+                <div class="desc">歌手 —— 张杰</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="fashion.html">
+                    <img src="img/fashion.jpg">
+                </a>
+                <div class="desc">时尚表现</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="benevolent.html">
+                    <img src="img/公益.jpg">
+                </a>
+                <div class="desc">星空公益</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="variety.html">
+                    <img src="img/综艺.jpg">
+                </a>
+                <div class="desc">综艺小杰</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="stageplay.html">
+                    <img src="img/话剧.jpg">
+                </a>
+                <div class="desc">话剧张杰</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="concert.html">
+                    <img src="img/concert.jpg">
+                </a>
+                <div class="desc">未.Live巡回演唱会</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- 页脚 -->
+        <br><hr>
+        <div class="foot">
+            <h5>欢迎关注张杰JasonZhang!</h5>
+        </div>
+        <br>
+    </body>
 </html>

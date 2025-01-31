@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>关于张杰</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 10;
+                overflow: hidden;
+                background-color: #4c7de8;
+                font-size: 120%;
+                font-weight: bolder;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #2267e7;
+            }
+            div.bar {
+                text-align: center;
+            }
+            body {
+                margin-left: 200px;
+                margin-right: 200px;
+                background-color: rgb(223, 231, 237);
+            }
+            div.about img {
+                border-radius: 25px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+            div.about {
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 30px;
+            }
+            div.about p {
+                color: #9e7510;
+                line-height: 175%;
+            }
+            div.about-item p.top {
+                color: brown;
+            }
+            div.about-item img:hover {
+                border: 3px solid #ccc;
+                box-shadow: 5px 5px #ccc;
+            }
+            h3 {
+                border-radius: 25px;
+                background-color: rgb(167, 191, 240);
+                width: 100px;
+                height: 35px;
+                text-align: center;
+                padding: 5;
+                border: 2px solid rgb(103, 114, 231);
+                letter-spacing: 2px;
+            }
+            h1 {
+                color: #cd9a18;
+                font-family: 'Times New Roman', Times, serif;
+                padding-left: 60px;
+            }
+            h1.status {
+                text-align: center;
+                letter-spacing: 2px;
+            }
+
+            div.img {
+                border: 2px solid #1b42ed;
+                border-radius: 50px;
+                column-gap: 50px;
+            }
+            div.img:hover {
+                border: 3px solid #1b42ed;
+            }
+            div.img img {
+                width: 100%;
+                height: auto;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+            @media only screen and (max-width: 700px){
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+            <!--列后面清除浮动-->
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 导航栏 -->
+        <div class="bar">
+            <ul>
+                <li><a class="active" href="home.html">首页</a></li>
+                <li><a href="about.html">介绍</a></li>
+                <li><a href="singer.html">歌手</a></li>
+                <li><a href="fashion.html">时尚</a></li>
+                <li><a href="benevolent.html">公益</a></li>
+                <li><a href="variety.html">综艺</a></li>
+            </ul>
+        </div>
+        <br>
+        <h1>About 张杰（JasonZhang）</h1>
+        <div class="about">
+            <div class="about-item">
+                <a target="_blank" href="https://www.weibo.com/u/1241148864">
+                    <img src="img/介绍.jpg" width="300px" height="390px">
+                    <br>点击图片进入张杰个人微博主页
+                </a>
+            </div>
+            <div class="about-item">
+                <p class="top">华语LIVE王。1982年12月20日出生于四川省成都市，毕业于四川师范大学。中国内地男歌手、音乐人，至今已发行16张高品质唱片。</p>
+                <h3>大事记</h3>
+                <p>
+                    2004年参加歌唱类选秀《我型我秀》，获得全国总冠军并出道。
+                <br>2007年参加歌唱类选秀《快乐男声》，获得总决赛第四名；随后发行的EP《最美的太阳》拿下亚马逊年度唱片销量冠军。
+                <br>2008年担任北京奥运会火炬手；同年5月在北京展览馆举行了首场个人演唱会最终因门票供不应求加售站票；10月发行第四张专辑《明天过后》，该专辑收录了《天下》《明天过后》《我们都一样》《仰望星空》等广为传唱的歌曲，张杰也凭借这张专辑获得北京流行音乐典礼11项提名。
+                <br>2010年发行第六张专辑《这，就是爱》，主打歌《这，就是爱》成为其歌手生涯的代表作之一；同年获得韩国MAMA亚洲最佳歌手奖。
+                <br>2011年七夕之夜与谢娜宣布婚讯，同年9月在云南香格里拉举办婚礼。
+                <br>2012年在人民大会堂开启个人首次巡回演唱会； 同年获得湖南省“五个一”工程奖。2012年7月，向中国人口福利基金会捐资200万元用作北斗星空爱心基金的创始资金；10月，成立第一间张杰音乐梦想教室。
+                <br>2013年首次登上中央电视台春节联欢晚会，和林宥嘉合唱歌曲《给我你的爱》。6月至9月赴美国波士顿伯克利音乐学院进修音乐。
+                <br>2014年获得第42届全美音乐奖年度国际艺人奖，成为首位获得此奖的华人歌手;同年演唱南京青奥会主题曲《点亮未来》。
+                <br>2016年成立个人音乐厂牌——行星文化，寓意“行进中的星星”；并开启张杰“我想”世界巡回演唱会，覆盖亚、欧、美、澳四个大洲，并成为首位在欧洲开个唱的内地歌手。
+                <br>2017年获得中国金唱片奖最佳流行歌手奖。
+                <br>2018年献唱建军91周年主题曲《微笑着胜利》；同年开启的张杰未·LIVE巡回演唱会两次刷新国家体育场鸟巢单场演唱会票房纪录。双胞胎女儿也在这年诞生。
+                <br>2019年参加庆祝新中国成立70周年文艺晚会，演唱歌曲《天耀中华》；同年作为中国歌手代表亮相亚洲文明对话大会——亚洲嘉年华并演唱歌曲；12月上海大学宣布张杰出任上海大学特聘声乐教师兼副研究员。
+                <br>2020年参加纪念中国人民志愿军抗美援朝出国作战70周年文艺晚会，独唱歌曲《微笑着胜利》。
+                </p>
+            </div>
+        </div>
+        <hr>
+        <h1 class="status">多重身份</h1>
+        <!-- 响应式图片廊 -->
+        <div class="responsive">
+            <div class="img">
+                    <img src="img/status1.jpg">
+                <div class="desc">歌手</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                    <img src="img/status2.jpg">
+                <div class="desc">时尚</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                    <img src="img/status3.jpg">
+                <div class="desc">综艺</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="img">
+                    <img src="img/status4.jpg">
+                <div class="desc">话剧</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+        <!-- 页脚 -->
+        <hr>
+        <div class="foot">
+            <h5>欢迎关注张杰JasonZhang!</h5>
+        </div>
+        <br>
+    </body>
+</html>
